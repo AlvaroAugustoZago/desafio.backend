@@ -1,0 +1,39 @@
+package com.projuris.desafio.backend.os.domain.evento;
+
+import static lombok.AccessLevel.PRIVATE;
+
+import java.time.Instant;
+
+import com.projuris.desafio.backend.infra.domain.DomainEvent;
+import com.projuris.desafio.backend.os.domain.OrdemServico;
+import com.projuris.desafio.backend.os.domain.OrdemServicoId;
+import com.projuris.desafio.backend.os.domain.SituacaoOrdemServico;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.ToString;
+
+@Getter
+@ToString
+@Builder(access = PRIVATE)
+public class OrdemServicoFinalizada implements DomainEvent {
+    
+    public static final String NAME = "InspecaoFinalizada";
+
+    public static final String CONDITION = "headers['type']=='" + NAME + "'";
+
+    private Instant ocorridoEm;
+
+    private OrdemServicoId os;
+
+    private SituacaoOrdemServico status;
+
+    public static OrdemServicoFinalizada from(OrdemServico os) {
+        return OrdemServicoFinalizada.builder()
+                .os(os.id())
+                .ocorridoEm(Instant.now())
+                .status(os.situacaoAtual())
+                .build();
+    }
+
+}
