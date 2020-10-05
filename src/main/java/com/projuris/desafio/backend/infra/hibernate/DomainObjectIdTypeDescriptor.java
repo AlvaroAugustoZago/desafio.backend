@@ -13,7 +13,7 @@ import com.projuris.desafio.backend.infra.domain.DomainObjectId;
 /**
  * Descritor de {@link DomainObjectId}s, e respectivos subtipos, para o Hibernate.
  * 
- * @author Thiago A. de Souza Weber
+ * @author Alvaro Augusto Zago
  * 
  * @param <K> tipo do identificador.
  * @see DomainObjectIdCustomType

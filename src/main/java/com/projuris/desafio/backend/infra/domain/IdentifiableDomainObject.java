@@ -7,7 +7,7 @@ import org.springframework.lang.Nullable;
 /**
  * Interface para os objetos de domínio que podem unicamente serem identificados.
  * 
- * @author Thiago A. de Souza Weber
+ * @author Alvaro Augusto Zago
  *
  * @param <K> tipo do identificador.
  */

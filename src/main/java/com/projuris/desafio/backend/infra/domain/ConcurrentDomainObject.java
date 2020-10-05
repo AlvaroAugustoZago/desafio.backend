@@ -6,7 +6,7 @@ import org.springframework.lang.Nullable;
  * Interface para objetos de domínio que usam bloqueio otimista para impedir que várias sessões simultâneas atualizem o objeto
  * ao mesmo tempo.
  * 
- * @author Thiago A. de Souza Weber
+ * @author Alvaro Augusto Zago
  *
  */
 public interface ConcurrentDomainObject extends DomainObject {

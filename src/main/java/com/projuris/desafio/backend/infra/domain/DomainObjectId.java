@@ -15,7 +15,7 @@ import com.fasterxml.jackson.annotation.JsonValue;
  * Classe de base para objetos de valor que são utilizados como identificadores para {@link IdentifiableDomainObject}s.
  * Esses objetos são basicamente encapsuladores de {@link UUID}s.
  * 
- * @author Thiago A. de Souza Weber
+ * @author Alvaro Augusto Zago
  *
  */
 public abstract class DomainObjectId implements Serializable, ValueObject {

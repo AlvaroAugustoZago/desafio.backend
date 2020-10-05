@@ -7,7 +7,7 @@ import org.springframework.lang.NonNull;
 /**
  * Interface de marcação para os eventos de domínio.
  * 
- * @author Thiago A. de Souza Weber
+ * @author Alvaro Augusto Zago
  *
  */
 public interface DomainEvent extends DomainObject {

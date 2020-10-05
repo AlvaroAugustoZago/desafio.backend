@@ -10,7 +10,7 @@ import lombok.experimental.UtilityClass;
 /**
  * Utility class to help validate {@link UUID}s values.
  * 
- * @author Thiago A. de Souza Weber
+ * @author Alvaro Augusto Zago
  *
  */
 @UtilityClass

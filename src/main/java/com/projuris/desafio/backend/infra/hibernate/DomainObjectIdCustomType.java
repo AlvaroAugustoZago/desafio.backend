@@ -16,7 +16,7 @@ import com.projuris.desafio.backend.infra.domain.DomainObjectId;
  * Isso permite utilizar {@link DomainObjectId}s como chave primárias; para isso, é preciso, criar uma subclasse para cada
  * subtipo de {@link DomainObjectId}.
  *
- * @author Thiago A. de Souza Weber
+ * @author Alvaro Augusto Zago
  *
  * @param <K> tipo do identificador.
  * @see DomainObjectIdTypeDescriptor
